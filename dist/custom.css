@@ -14,7 +14,7 @@
 /** 
 ** Styling single image in a slide
 **/
-.coriandoli img {
+.coriandoli img, .bday img {
   width: 80%;
  }
 
@@ -51,31 +51,31 @@
 ** Styling video in a slide
 **/
 
-  .vertical-video--container {
-    overflow: hidden;
-  }
-  .vertical-video {
-    margin-top: -25%;
-    margin-bottom: -30%;
-    overflow: hidden;
-    width: 60%;
-  }
+.vertical-video--container {
+  overflow: hidden;
+}
+.vertical-video {
+  margin-top: -25%;
+  margin-bottom: -30%;
+  overflow: hidden;
+  width: 60%;
+}
 
-  .three-videos {
-    flex: 1;
-    max-width: calc(33.33% - 15px);  
-    overflow: hidden;
-    width: 60%;
+.three-videos {
+  flex: 1;
+  max-width: calc(33.33% - 15px);  
+  overflow: hidden;
+  width: 60%;
 }
 
   /*
   ** MORE RAINBOW STYLE **
   */
 
-   .rainbow-border {
-    border: 5px solid;
-    border-image:  var(--r-border-img-colour);
-    border-image-slice: 1;
+.rainbow-border {
+  border: 5px solid;
+  border-image:  var(--r-border-img-colour);
+  border-image-slice: 1;
 }
 
 .rainbow-text { 

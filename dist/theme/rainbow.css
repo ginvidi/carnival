@@ -121,7 +121,7 @@
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
   -webkit-text-stroke: 2px var(--r-text-stroke-color); 
-  text-stroke: 2px  var(--r-text-stroke-color);
+  text-stroke: 2px var(--r-text-stroke-color);
 }
 
 /* Remove trailing margins after titles */
