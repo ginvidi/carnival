@@ -2,6 +2,7 @@
   --r-border-img-colour:linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
 }
 
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -10,36 +11,46 @@
     gap: 10px;
 }
 
+/** 
+** Styling single image in a slide
+**/
+.coriandoli img {
+  width: 80%;
+ }
+
+/** 
+** Styling 3 images in a slide
+**/
+
+.three-imgs img {
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
 .three-imgs img:first-child,  .three-imgs img:last-child {
     flex: 1;
     max-width: calc(33.33% - 10px);
-    box-sizing: border-box;
     z-index: 10;
-    border: 12px solid; 
-    border-image: var(--r-border-img-colour);
-    border-image-slice: 1;
-
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-  .three-imgs img:nth-of-type(2){
-    flex: 2;
-    max-width: calc(66.66% - 20px); 
-    margin-left: -28.33%;
-    margin-right: -33.33%;
-    box-sizing: border-box;
-    border: solid white 8px;
+    border: 12px solid;
     border-image:  var(--r-border-img-colour);
     border-image-slice: 1;
-
-    z-index: 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
-  }
-.three-videos {
-    flex: 1;
-    max-width: calc(33.33% - 15px);  
-    overflow: hidden;
-    width: 60%;
 }
+.three-imgs img:nth-of-type(2){
+  flex: 2;
+  max-width: calc(66.66% - 20px); 
+  margin-left: -28.33%;
+  margin-right: -33.33%;
+  border: solid 8px;
+  border-image:  var(--r-border-img-colour);
+  border-image-slice: 1;
+  z-index: 0;
+}
+
+
+/** 
+** Styling video in a slide
+**/
+
   .vertical-video--container {
     overflow: hidden;
   }
@@ -48,26 +59,30 @@
     margin-bottom: -30%;
     overflow: hidden;
     width: 60%;
-
   }
-  .coriandoli img, .bday img {
-    margin-top: -50%;
-    width: 80%;
-   }
 
-   
+  .three-videos {
+    flex: 1;
+    max-width: calc(33.33% - 15px);  
+    overflow: hidden;
+    width: 60%;
+}
 
-  /*RAINBOW*/
-   /* .diagonal-rainbow {
-        background: linear-gradient(to bottom right, #FD6666, #F6AE89, #F4C062, #FFFF00, #75ED75, #5454DF, #9001F8, #DD08DD);
-        height: 100vh;
-        margin: 0;
-   } */
+  /*
+  ** MORE RAINBOW STYLE **
+  */
 
    .rainbow-border {
     border: 5px solid;
     border-image:  var(--r-border-img-colour);
     border-image-slice: 1;
+}
+
+.rainbow-text { 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to left, #FF0000, #FF7F00, #FFFF00, #006400, #0000FF, #4B0082, #8B00FF);
 }
 
   
